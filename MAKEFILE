@@ -1,0 +1,18 @@
+CFLAGS				:= 
+INCLUDES			:= -I ./
+SOURCES   		:= $(wildcard *.c)
+OBJECTS   		:= $(SOURCES:.c=.o)
+DYNAMIC_LINKS	:= -lgdi32 -L ./ # ./directory/ -lmylib
+SUBSYS				:= -Wl,-subsystem,console
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< $(INCLUDES) -o $@
+
+compile: $(OBJECTS)
+	$(CC) $(CFLAGS) $< -o $(NAME) $(DYNAMIC_LINKS) $(SUBSYS)
+
+clean:
+	@rm -f *.o *.exe *.exe.stackdump
+
+.DEFAULT_GOAL := Build
+Build: clean compile

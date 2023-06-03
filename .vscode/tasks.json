@@ -1,0 +1,33 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build: img@recognition",
+			"command": "make",
+			"type": "process",
+			"args": [
+				"-f",
+				"${workspaceFolder}/MAKEFILE",
+				"CC=gcc",
+				"NAME=img@recognition"
+			],
+			"problemMatcher": "$msCompile"
+		},
+		{
+			"label": "Build/Run: img@recognition",
+			"command": "${workspaceFolder}/img@recognition.exe",
+			"type": "process",
+			"args": [
+				""
+			],
+			"dependsOn": [
+				"Build: img@recognition"
+			],
+			"problemMatcher": "$msCompile",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
