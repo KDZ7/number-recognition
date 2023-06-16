@@ -1,7 +1,6 @@
----  I A  ---
-
 # number-recognition
-Project: Creating a Neural Network for Digit Recognition on a Grid.
+Project: Development of an Artificial Neural Network for Digit Recognition on a Grid
 
-This project draws inspiration from deep learning and utilizes mathematical optimization techniques to find the best parameters for the network. 
-It is developed in the C programming language, and the required functions to enhance the neural network are available in the "brain.h" library.
+This project falls within the domain of deep learning and aims to create an artificial neural network capable of recognizing digits written on a grid. It leverages mathematical optimization techniques to determine the optimal parameters of the network. The development is carried out in the C language, taking advantage of its speed and computational efficiency. I have created and customized the "brain.h" library, which provides the necessary functions for enhancing the neural network.
+
+The goal is to rely on the use of C/C++ languages for development, as they offer faster execution and computational capabilities. However, this approach also presents challenges due to the need to reconstruct all the underlying algorithms and mathematics involved in AI.
