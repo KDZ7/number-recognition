@@ -1,3 +1,5 @@
+---  I A  ---
+
 # number-recognition
 Project: Creating a Neural Network for Digit Recognition on a Grid.
 
